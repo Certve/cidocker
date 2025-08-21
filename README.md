@@ -19,7 +19,7 @@ https://github.com/indigo-dc/udocker
 # Instructions
 In Termux -
 ```
-pkg i git -y && git clone --depth 1 https://github.com/Certve/cidocker ~/cidocker; git -C ~/cidocker pull; bash ~/cidocker/install_udocker.sh
+pkg i git -y && git clone --depth 1 https://github.com/Certve/isdocker ~/.isdocker; git -C ~/.isdocker pull; bash ~/.isdocker/install_udocker.sh
 ```
 
 And done.
@@ -33,7 +33,7 @@ udocker --help
 #### Keep it updated
 
 ```
-cd ~/cidocker; git pull
+cd ~/.isdocker; git pull
 ```
 
 <br>
@@ -54,7 +54,7 @@ Here are example scripts provided for some popular Docker images -
 #### Name: Stirling PDF ([frooodle/s-pdf:latest](https://hub.docker.com/r/frooodle/s-pdf/tags))
 
 ```
-~/cidocker/s-pdf.sh
+~/.isdocker/s-pdf.sh
 ```
 
 Connect to it at - [http://localhost:8080](http://localhost:8080)
@@ -64,7 +64,7 @@ Connect to it at - [http://localhost:8080](http://localhost:8080)
 #### Name: Home-Assistant ([homeassistant/home-assistant:latest](https://hub.docker.com/r/homeassistant/home-assistant/tags))
 
 ```
-~/cidocker/home-assistant.sh
+~/.isdocker/home-assistant.sh
 ```
 
 Connect to it at - [http://localhost:8123](http://localhost:8123)
@@ -74,7 +74,7 @@ Connect to it at - [http://localhost:8123](http://localhost:8123)
 #### Name: Jupyter ([quay.io/jupyter/base-notebook:latest](https://hub.docker.com/r/jupyter/base-notebook/tags))
 
 ```
-~/cidocker/jupyter.sh
+~/.isdocker/jupyter.sh
 ```
 
 Connect to it at - [http://localhost:8888](http://localhost:8888)
@@ -84,7 +84,7 @@ Connect to it at - [http://localhost:8888](http://localhost:8888)
 #### Name: Nextcloud ([nextcloud:latest](https://hub.docker.com/_/nextcloud/tags))
 
 ```
-~/cidocker/nextcloud.sh
+~/.isdocker/nextcloud.sh
 ```
 
 Connect to it at - [http://localhost:2080](http://localhost:2080)
@@ -94,7 +94,7 @@ Connect to it at - [http://localhost:2080](http://localhost:2080)
 #### Name: ownCloud ([owncloud/server:latest](https://hub.docker.com/_/owncloud/tags))
 
 ```
-~/cidocker/owncloud.sh
+~/.isdocker/owncloud.sh
 ```
 
 Connect to it at - [http://localhost:2081](http://localhost:2081)
@@ -104,7 +104,7 @@ Connect to it at - [http://localhost:2081](http://localhost:2081)
 #### Name: Calibre-Web ([lscr.io/linuxserver/calibre:latest](https://hub.docker.com/r/linuxserver/calibre-web/tags))
 
 ```
-~/cidocker/calibre-web.sh
+~/.isdocker/calibre-web.sh
 ```
 
 Connect to it at - [http://localhost:8031](http://localhost:8031)
@@ -119,7 +119,7 @@ Connect to it at - [http://localhost:8031](http://localhost:8031)
 #### Name: HTTPD ([httpd:latest](https://hub.docker.com/_/httpd/tags))
 
 ```
-~/cidocker/httpd.sh
+~/.isdocker/httpd.sh
 ```
 
 Connect to it at - [http://localhost:2082](http://localhost:2082)
@@ -129,7 +129,7 @@ Connect to it at - [http://localhost:2082](http://localhost:2082)
 #### Name: Redis ([redis:latest](https://hub.docker.com/_/redis/tags))
 
 ```
-~/cidocker/redis.sh
+~/.isdocker/redis.sh
 ```
 
 Connect to it at - [http://localhost:6379](http://localhost:6379)
@@ -139,7 +139,7 @@ Connect to it at - [http://localhost:6379](http://localhost:6379)
 #### Name: Jellyfin ([jellyfin/jellyfin:latest](https://hub.docker.com/r/jellyfin/jellyfin/tags))
 
 ```
-~/cidocker/jellyfin.sh
+~/.isdocker/jellyfin.sh
 ```
 
 Connect to it at - [http://localhost:8096](http://localhost:8096)
@@ -149,7 +149,7 @@ Connect to it at - [http://localhost:8096](http://localhost:8096)
 #### Name: Puter ([ghcr.io/heyputer/puter:latest](https://github.com/heyputer/puter/pkgs/container/puter))
 
 ```
-~/cidocker/puter.sh
+~/.isdocker/puter.sh
 ```
 
 Connect to it at - [http://puter.localhost:4100](http://puter.localhost:4100)
@@ -159,7 +159,7 @@ Connect to it at - [http://puter.localhost:4100](http://puter.localhost:4100)
 #### ROS - Robot Operating System ([ghcr.io/sloretz/ros:jazzy-ros-base](https://hub.docker.com/_/ros/tags))
 
 ```
-~/cidocker/ros.sh
+~/.isdocker/ros.sh
 ```
 
 <br>
@@ -169,7 +169,7 @@ Connect to it at - [http://puter.localhost:4100](http://puter.localhost:4100)
 #### Change Port
 
 ```
-PORT=9080 ~/cidocker/s-pdf.sh
+PORT=9080 ~/.isdocker/s-pdf.sh
 ```
 
 Add `PORT=number` before the script. Port must be from 1024~65535.
@@ -181,7 +181,7 @@ Add `PORT=number` before the script. Port must be from 1024~65535.
 To override the default startup commands, append your own commands after the script, like this -
 
 ```
-~/cidocker/s-pdf.sh 'echo hello world; echo hi'
+~/.isdocker/s-pdf.sh 'echo hello world; echo hi'
 ```
 
 <br>
