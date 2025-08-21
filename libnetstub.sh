@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Refer to https://github.com/George-Seven/Termux-Proot-Utils
+# Refer to https://github.com/Certve/Termux-Proot-Utils
 
 load_libnetstub(){
 
